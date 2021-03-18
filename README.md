@@ -4,7 +4,7 @@ Scripts that I use for my day to day work.
 
 ## gdrive_backup.sh
 
-How to backups in google drive
+## How to backups in google drive
 
 **PREREQUISITES:** You need to install `jq` and `curl` in your machine **before** executing this script.
 
