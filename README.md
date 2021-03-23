@@ -31,3 +31,9 @@ This script could be used to store a file in google drive, use it along with a c
 19. Open a terminal and do the following: `curl -s --request POST --data "code=${AUTHORIZATION_CODE}&client_id=${G_CLIENT_ID}&client_secret=${G_CLIENT_SECRET}&redirect_uri=urn:ietf:wg:oauth:2.0:oob&grant_type=authorization_code" https://oauth2.googleapis.com/token` **note that you have to replace ${} with your information**, this will gives you a JSON response with a `refresh_token` please copy and paste it in your pc.
 20. Open [gdrive_backup.sh](/gdrive_backup.sh) and edit `REFRESH_TOKEN` with your refresh token of the previous step.
 21. Now you could use the script to upload files to Google Drive, enjoy!.
+
+## scanall.sh
+
+Scan an IP range and a port. Usage (for example to scan IP 192.168.1.0/24 and port 22):
+
+`./scanall 192.168.1 22`
