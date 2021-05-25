@@ -2,6 +2,14 @@
 
 Scripts that I use for my day to day work.
 
+## change_git_author.sh
+
+Changes the author of the git log, **use with caution**. To use it follow these steps:
+
+1. Edit **<OLD_EMAIL_HERE>** with the old email you want to replace (line 5 of the script).
+2. Edit **<CORRECT_NAME_HERE>** with the new name you want to put in the git logs (line 6 of the script).
+3. Edit **<CORRECT_EMAIL_HERE>** with the new email you want to put in the git logs (line 7 of the script).
+
 ## gdrive_backup.sh
 
 ## How to backups in google drive
