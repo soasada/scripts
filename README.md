@@ -38,7 +38,8 @@ This script could be used to store a file in google drive, use it along with a c
 18. Open [gdrive_backup.sh](/gdrive_backup.sh) and edit `G_CLIENT_ID` with 'Your Client ID', `G_CLIENT_SECRET` with 'Your Client Secret' and `AUTHORIZATION_CODE` with your AUTHORIZATION_CODE.
 19. Open a terminal and do the following: `curl -s --request POST --data "code=${AUTHORIZATION_CODE}&client_id=${G_CLIENT_ID}&client_secret=${G_CLIENT_SECRET}&redirect_uri=urn:ietf:wg:oauth:2.0:oob&grant_type=authorization_code" https://oauth2.googleapis.com/token` **note that you have to replace ${} with your information**, this will gives you a JSON response with a `refresh_token` please copy and paste it in your pc.
 20. Open [gdrive_backup.sh](/gdrive_backup.sh) and edit `REFRESH_TOKEN` with your refresh token of the previous step.
-21. Now you could use the script to upload files to Google Drive, enjoy!.
+21. Remember to put your Google application in production, if you don't do this your refresh token will expire in 7 days. More info: https://stackoverflow.com/a/65936387
+22. Now you could use the script to upload files to Google Drive, enjoy!.
 
 ## scanall.sh
 
